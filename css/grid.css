@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 .offset {
-    display:none;
+    margin-left: 0px;
 }
 
 /* For devices larger than 480px */
@@ -27,7 +27,7 @@
         
     }
     ._12 {
-        padding: 0 2%;
+        padding: 0;
     }
     
 /*Grid between 480px & 768px*/
@@ -48,27 +48,49 @@
 /* For devices larger than 768px */
 @media (min-width: 768px) {
   
-  ._1._12                    { width: 50%; }
-  ._2._12                    { width: 50%; }
-  ._3._12                    { width: 50%; }
-  ._4._12                    { width: 50%; }
-  ._5._12                    { width: 50%; }
-  ._6._12                    { width: 50%; }
-  ._7._12                    { width: 50%; }
-  ._8._12                    { width: 50%; }
-  ._9._12                    { width: 50%; }
-  ._10._12                   { width: 50%; }
-  ._11._12                   { width: 50%; }
-  ._12                       { width: 50%; }
+  ._1._12                    { width: 48%; }
+  ._2._12                    { width: 48%; }
+  ._3._12                    { width: 48%; }
+  ._4._12                    { width: 48%; }
+  ._5._12                    { width: 48%; }
+  ._6._12                    { width: 48%; }
+  ._7._12                    { width: 48%; }
+  ._8._12                    { width: 48%; }
+  ._9._12                    { width: 48%; }
+  ._10._12                   { width: 48%; }
+  ._11._12                   { width: 48%; }
+  ._12                       { width: 100%; }
 
 /*  Offsets:  attach to the grid classes
-    Example: ._3._12.offset
+    Example: class = "_3 _12 three offset";
     
 */
     .offset {
         display: block;
         min-height: 1px;
+        margin-left: 50%;
     }
+    
+.small_left.offset {
+    margin-left: 10px;
+}
+.small_right.offset {
+    margin-right: 10px;
+}
+
+    
+  .one.offset                 { margin-left: 50%; }
+  .two.offset                 { margin-left: 50%; }
+  .three.offset               { margin-left: 50%; }
+  .four.offset                { margin-left: 50%; }
+  .five.offset                { margin-left: 50%; }
+  .six.offset                 { margin-left: 50%; }
+  .seven.offset               { margin-left: 50%; }
+  .eight.offset               { margin-left: 50%; }
+  .nine.offset                { margin-left: 50%; }
+  .ten.offset                 { margin-left: 50%; }
+  .eleven.offset              { margin-left: 50%; }
+  .twelve.offset              { margin-left: 50%; }
     
 }
 
@@ -78,23 +100,34 @@
     width: 95%; 
   }
   ._12 {
-    padding: 0 3%; 
+    padding: 0; 
   }
   
-  ._1._12                    { width: 8.33333333333%; }
-  ._2._12                    { width: 16.66666666667%; }
-  ._3._12                    { width: 25%;  }
-  ._4._12                    { width: 33.33333333333%; }
-  ._5._12                    { width: 41.66666666666%; }
-  ._6._12                    { width: 50%;  }
-  ._7._12                    { width: 58.33333333333%; }
-  ._8._12                    { width: 66.66666666667%; }
-  ._9._12                    { width: 75%;  }
-  ._10._12                   { width: 83.33333333333%; }
-  ._11._12                   { width: 91.66666666667%; }
-  ._12                       { width: 100%; }
+    ._1._12                    { width: 8.33333333333%; }
+    ._2._12                    { width: 16.66666666667%; }
+    ._3._12                    { width: 25%;  }
+    ._4._12                    { width: 33.33333333333%; }
+    ._5._12                    { width: 41.66666666666%; }
+    ._6._12                    { width: 50%;  }
+    ._7._12                    { width: 58.33333333333%; }
+    ._8._12                    { width: 66.66666666667%; }
+    ._9._12                    { width: 75%;  }
+    ._10._12                   { width: 83.33333333333%; }
+    ._11._12                   { width: 91.66666666667%; }
+    ._12                       { width: 100%; }
 
-
+    .one.offset                 { margin-left: 8.33333333333%; }
+    .two.offset                 { margin-left: 16.66666666667%; }
+    .three.offset               { margin-left: 25%; }
+    .four.offset                { margin-left: 33.33333333333%; }
+    .five.offset                { margin-left: 41.66666666666%; }
+    .six.offset                 { margin-left: 50%; }
+    .seven.offset               { margin-left: 58.33333333333%; }
+    .eight.offset               { margin-left: 66.66666666667%; }
+    .nine.offset                { margin-left: 75%; }
+    .ten.offset                 { margin-left: 83.33333333333%; }
+    .eleven.offset              { margin-left: 91.66666666667%; }
+/*    .twelve.offset              { margin-left: 50%; }*/
 
     
     

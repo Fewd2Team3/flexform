@@ -30,6 +30,7 @@
 
     <!--    <link rel="stylesheet" href="css/normalize.css">-->
     <!--    <link rel="stylesheet" href="css/skeleton.css">-->
+<!--    <link rel="stylesheet" href="css/grid-old.css">-->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/flexFormStyles.css">
     <!--    <link rel="stylesheet" href="css/styles.css">-->
@@ -58,8 +59,8 @@
         Description of "Base" form styles 
 ------------------------------------------------------------------------------------------------------------->
  
-<div class="container ">
-    <div class="row col-sm-12 flexform-frame">
+<div class="container flexform-frame">
+    <div class="row ">
         <div class="formDescription">
            <div class="flexform-title">
                 <h1 >Flex Form Base Styles</h1>
@@ -96,7 +97,7 @@
    
     
 <div class="container flexform-frame">
-    <div class="row col-sm-12">
+    <div class="row">
         <form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
 
             <div class="flexform-title">
@@ -104,13 +105,28 @@
             </div>
 
             <div class="flexform-group">
-                <label for="but">Button:</label>
+                <label for="but">Extra Small Button:</label>
+                <button class="btn-xs" id="but" type="submit" name="foo" value="bar">Submit</button>
+            </div>            
+               
+               <div class="flexform-group">
+                <label for="but">Small Button:</label>
+                <button class="btn-sm" id="but" type="submit" name="foo" value="bar">Submit</button>
+            </div>
+            
+            <div class="flexform-group">
+                <label for="but">Default/Normal Button:</label>
                 <button id="but" type="submit" name="foo" value="bar">Submit</button>
             </div>
             
             <div class="flexform-group">
+                <label for="but">Large Button:</label>
+                <button class="btn-lg" id="but" type="submit" name="foo" value="bar">Submit</button>
+            </div>
+            
+            <div class="flexform-group">
                 <label for="f0">Reset button:</label>
-                <input id="f0" type="reset" name="reset" value="Reset">
+                <input class="btn-nrml" id="f0" type="reset" name="reset" value="Reset">
             </div>
             
             <div class="flexform-group">
@@ -276,9 +292,10 @@
 <!-----------------------------------------------------------------------------------------------------------
         Sample HTML for Vertical Form Template
 ------------------------------------------------------------------------------------------------------------->    
-<div class="flexform-frame">
 
-       <div class="row ">
+       <div class="flexform-frame">
+
+       <div class="row">
 
 <!--        <div class="flexform-frame">  // Alternative place you could place flexform--frame and get same result -->
  
@@ -477,7 +494,7 @@
                     <h2>Horizontal Form Template</h2>
                 </div>
 
-                <div class="flexform-group">
+                <div class="row flexform-group">
                     <input type="hidden" name="hidden field" value="42"> This is a form containing various fields (with some initial values (defaults) set, so that you can see how input text looks like without actually typing it):
                 </div>
                 <div class="row flexform-group">
